@@ -7,12 +7,12 @@ def generate_password(length)
 end
 
 # Клієнтський код для тестування генерації паролю
-print 'Введіть бажану довжину паролю: '
+print 'Enter the desired password length: '
 length = gets.chomp.to_i
 
 if length <= 0
-  puts 'Некоректна довжина паролю. Будь ласка, введіть позитивне число.'
+  puts 'Invalid password length. Please enter a positive number.'
 else
   password = generate_password(length)
-  puts "Згенерований пароль: #{password}"
+  puts "Generated password: #{password}"
 end
